@@ -1,0 +1,137 @@
+.first-bg-color {
+    background-color: #212224;
+  }
+  .search_color {
+    background-color: #28292b !important;
+  }
+  .search_input {
+    position: absolute;
+    color: white;
+    top: 11px;
+    left: 11px;
+  }
+  input::placeholder {
+    padding-left: 1.3rem !important;
+  }
+  .second-bg-color {
+    background-color: #28292b;
+    padding: 4rem;
+    border-radius: 25px;
+  }
+  .button {
+    background-color: #df5d8b;
+    border-radius: 20px;
+    border: none;
+    width: 150px;
+    padding: 6px;
+    color: white;
+  }
+  .Discover-button {
+    position: absolute;
+    background-color: #df5d8b;
+    border-radius: 20px;
+    border: none;
+    right: 43%;
+  }
+  .owl-nav {
+    position: absolute;
+    display: block;
+    color: wheat;
+    top: -50px;
+    right: 1rem;
+  }
+  .owl-dots {
+    display: none;
+  }
+  .owl-border-radius {
+    border-radius: 27px;
+  }
+  .star-img {
+    height: 15px;
+    width: 15px !important;
+  }
+  .download-fill {
+    height: 15px;
+    width: 15px;
+  }
+  
+  .featuredGames {
+    background-color: #212224;
+    border-radius: 25px;
+    width: 65%;
+  }
+  
+  .banner {
+    background-image: url("/training/images/banner-bg.jpg");
+    background-repeat: no-repeat;
+    border-radius: 25px;
+    background-size: cover;
+    padding: 6rem;
+  }
+  .button {
+    background-color: #df5d8b;
+    border-radius: 20px;
+    border: none;
+    width: 150px;
+    padding: 6px;
+    color: white;
+  }
+  
+  .search_input {
+    position: absolute;
+    color: white;
+    top: 11px;
+    left: 11px;
+  }
+  input::placeholder {
+    padding-left: 1.3rem !important;
+  }
+  .card-body {
+    background-color: #28292b;
+  }
+  .downloaded-button {
+    color: gray;
+    border-radius: 56px;
+    width: 143px;
+    height: 44px;
+    background-color: #212224;
+    border-color: #38393a;
+  }
+  
+  .live_stream{
+    border :1px solid #636363; border-radius: 15px;
+  }
+  .pink-text{
+        color: #df5d8b;
+  }
+  .text-gray{
+    color: gray;
+  }
+  .star-img{
+    height: 15px !important;
+    width: 15px !important;
+  }
+  .img-border{
+    border-radius: 25px;
+  }
+  .text-dec{
+    text-decoration: underline;
+  }
+  .download-arrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    background-color: #38393a;
+  }
+  .section-bg-color{
+    background-color: #030303;
+  }
+  .arrow-position{
+    align-items: end;
+    justify-content: end;
+   display: flex;
+     padding-bottom: 1rem;
+  }
