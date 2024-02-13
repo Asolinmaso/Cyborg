@@ -1,334 +1,445 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link href="https:/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Document</title>
-    <link rel="stylesheet" href="/css/style.css" />
-    <link
-      href="https:/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-  </head>
+</head>
 
-  <body class="p-0 m-0">
-    <div class="first-bg-color">
-      <div class="nav-main">
-        <!-- <navbar> -->
+<body class="first-bg-color">
 
-        <nav class="navbar navbar-expand-lg navbar-light">
-          <div class="container-fluid">
-            <div class="p-2">
-              <img src="/images/logo.png" />
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fs-14">
+        <div class="container">
+            <div class="d-flex align-items-center gap-5">
+                <div class="p-2">
+                    <img src="/images/logo.png" />
+                </div>
+                <form class="d-lg-flex d-none">
+                    <div class="position-relative">
+                        <input class="form-control me-2 search_color search-border" type="search"
+                            placeholder="Type Something" aria-label="Search" />
+                        <svg class="search_input" xmlns="http:/www.w3.org/2000/svg" width="1em" height="1em"
+                            viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="m19.485 20.154l-6.262-6.262q-.75.639-1.725.989q-.975.35-1.96.35q-2.402 0-4.066-1.663q-1.664-1.664-1.664-4.065T5.47 5.436q1.663-1.667 4.064-1.667q2.402 0 4.068 1.664q1.666 1.664 1.666 4.067q0 1.042-.369 2.017q-.37.975-.97 1.668l6.262 6.261zM9.538 14.23q1.99 0 3.361-1.37q1.37-1.37 1.37-3.361q0-1.99-1.37-3.36q-1.37-1.37-3.36-1.37q-1.99 0-3.361 1.37q-1.37 1.37-1.37 3.36q0 1.99 1.37 3.36q1.37 1.37 3.36 1.37" />
+                        </svg>
+                    </div>
+
+                </form>
             </div>
 
-            <form>
-              <div class="position-relative">
-                <input
-                  class="form-control me-2 search_color search-border"
-                  type="search"
-                  placeholder="Type Something"
-                  aria-label="Search"
-                />
-                <svg
-                  class="search_input"
-                  xmlns="http:/www.w3.org/2000/svg"
-                  width="1em"
-                  height="1em"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    fill="currentColor"
-                    d="m19.485 20.154l-6.262-6.262q-.75.639-1.725.989q-.975.35-1.96.35q-2.402 0-4.066-1.663q-1.664-1.664-1.664-4.065T5.47 5.436q1.663-1.667 4.064-1.667q2.402 0 4.068 1.664q1.666 1.664 1.666 4.067q0 1.042-.369 2.017q-.37.975-.97 1.668l6.262 6.261zM9.538 14.23q1.99 0 3.361-1.37q1.37-1.37 1.37-3.361q0-1.99-1.37-3.36q-1.37-1.37-3.36-1.37q-1.99 0-3.361 1.37q-1.37 1.37-1.37 3.36q0 1.99 1.37 3.36q1.37 1.37 3.36 1.37"
-                  />
-                </svg>
-              </div>
-            </form>
-            <div class="d-flex align-items-center gap-4">
-              <div>
-                <ul class="navbar-nav text-white gap-3">
-                  <li class="nav-item text-white">
-                    <a
-                      class="nav-link text-white active"
-                      aria-current="page"
-                      href="#"
-                      >Home</a
-                    >
-                  </li>
-                  <li class="nav-item text-white">
-                    <a class="nav-link text-white" href="#">Browse</a>
-                  </li>
-                  <li class="nav-item text-white">
-                    <a class="nav-link text-white" href="#">Details</a>
-                  </li>
+            <!-- navigation for Mobile View -->
 
-                  <li class="nav-li text-white">
-                    <a class="nav-link text-white" href="#">Streams</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="d-flex align-items-center gap-2 profile">
-                <div class="text-white">Profile</div>
-                <div>
-                  <img
-                    class="rounded-circle"
-                    src="/images/profile-header.jpg"
-                  />
+            <button class="btn btn-danger navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><span
+                    class="navbar-toggler-icon text-white"></span></button>
+
+            <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasRight"
+                aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header justify-content-end">
+
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
                 </div>
-              </div>
+                <div class="offcanvas-body ">
+
+                    <ul class="navbar-nav me-lg-0 m-auto mb-2 mb-lg-0  gap-3 ">
+                        <li class="nav-item ">
+                            <a class="nav-link active text-white " aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Browse</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-white " href="#" tabindex="-1" aria-disabled="true">Details</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white " href="#" tabindex="-1" aria-disabled="true">Streams</a>
+                        </li>
+                        <li>
+                            <div class="d-flex align-items-center gap-2 profile">
+                                <div class="nav-link text-white ">Profile</div>
+                                <div>
+                                    <img class="rounded-circle d-none d-lg-block" src="/images/profile-header.jpg" />
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
             </div>
-          </div>
-        </nav>
-      </div>
 
-      <!-- <banner> -->
-      <div class="second-bg-color">
-        <div class="third-bg-color">
-          <div class="banner text-white">
-            <p>Welcome To Cyborg</p>
-            <h1 class="banner-text">
-              <span class="pink-text"> BROWSE </span> OUR POPULAR GAMES HERE
-            </h1>
-            <button class="button mt-3">Browse Now</button>
-          </div>
+            <!-- navigation for Desktop View -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
 
-          <!-- <hero-section> -->
-            <div class="container">
-              <div class="row">
-                <div class="col-md-3 col-12">
-                  <img
-                      class="card-img-top img-border"
-                      src="/images/popular-01.jpg"
-                    />
-    
-                    <div class="text-white fw-bold mt-3">Fortnite</div>
-                    <div class="text-gray">Sandbox</div>
+                <div class="d-flex align-items-center gap-4 nav_list">
+                    <ul class="navbar-nav me-lg-0 m-auto mb-2 mb-lg-0  gap-3">
+                        <li class="nav-item ">
+                            <a class="nav-link active " aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">Browse</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link disabled " href="#" tabindex="-1" aria-disabled="true">Details</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled " href="#" tabindex="-1" aria-disabled="true">Streams</a>
+                        </li>
+                        <li>
+                            <div class="d-flex align-items-center gap-2 profile">
+                                <div class="nav-link ">Profile</div>
+                                <div>
+                                    <img class="rounded-circle d-none d-lg-block" src="/images/profile-header.jpg" />
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
                 </div>
-                <div class="col-md-3 col-12">
-                  <img
-                      class="card-img-top img-border"
-                      src="/images/popular-01.jpg"
-                    />
-    
-                    <div class="text-white fw-bold mt-3">Fortnite</div>
-                    <div class="text-gray">Sandbox</div>
-                </div>
-                <div class="col-md-3 col-12">
-                  <img
-                      class="card-img-top img-border"
-                      src="/images/popular-01.jpg"
-                    />
-    
-                    <div class="text-white fw-bold mt-3">Fortnite</div>
-                    <div class="text-gray">Sandbox</div>
-                </div>
-                <div class="col-md-3 col-12">
-                  <img
-                      class="card-img-top img-border"
-                      src="/images/popular-01.jpg"
-                    />
-    
-                    <div class="text-white fw-bold mt-3">Fortnite</div>
-                    <div class="text-gray">Sandbox</div>
-                </div>
-              </div>
             </div>
-          <div class="mt-5 px-4 py-5 position-relative img-border bg-212224">
-            <h2 class="text-white mb-4">
-              <span class="text-decoration-underline"> Most Popular</span>
-              <span class="pink-text"> Right Now </span>
-            </h2>
-            
-            <div class="d-grid gap-3 grid-template-columns-1">
-              <div class="p-4 img-border bg-color-2">
-                <img
-                  class="card-img-top img-border"
-                  src="/images/popular-01.jpg"
-                />
-
-                <div class="text-white fw-bold mt-3">Fortnite</div>
-                <div class="text-gray">Sandbox</div>
-              </div>
-              <div class="p-4 img-border bg-color-2">
-                <img
-                  class="card-img-top img-border"
-                  src="/images/popular-02.jpg"
-                />
-
-                <div class="text-white fw-bold mt-3">Fortnite</div>
-                <div class="text-gray">Sandbox</div>
-              </div>
-              <div class="p-4 img-border bg-color-2">
-                <img
-                  class="card-img-top img-border"
-                  src="/images/popular-03.jpg"
-                />
-
-                <div class="text-white fw-bold mt-3">Fortnite</div>
-                <div class="text-gray">Sandbox</div>
-              </div>
-              <div class="p-4 img-border bg-color-2">
-                <img
-                  class="card-img-top img-border"
-                  src="/images/popular-04.jpg"
-                />
-
-                <div class="text-white fw-bold mt-3">Fortnite</div>
-                <div class="text-gray">Sandbox</div>
-              </div>
-              <div class="p-4 img-border bg-color-2">
-                <img
-                  class="card-img-top img-border"
-                  src="/images/popular-05.jpg"
-                />
-
-                <div class="text-white fw-bold mt-3">Fortnite</div>
-                <div class="text-gray">Sandbox</div>
-              </div>
-              <div class="p-4 img-border bg-color-2">
-                <img
-                  class="card-img-top img-border"
-                  src="/images/popular-06.jpg"
-                />
-
-                <div class="text-white fw-bold mt-3">Fortnite</div>
-                <div class="text-gray">Sandbox</div>
-              </div>
-              <div class="p-4 img-border bg-color-2">
-                <img
-                  class="card-img-top img-border"
-                  src="/images/popular-07.jpg"
-                />
-
-                <div class="text-white fw-bold mt-3">Fortnite</div>
-                <div class="text-gray">Sandbox</div>
-              </div>
-              <div class="p-4 img-border bg-color-2">
-                <img
-                  class="card-img-top img-border"
-                  src="/images/popular-08.jpg"
-                />
-
-                <div class="text-white fw-bold mt-3">Fortnite</div>
-                <div class="text-gray">Sandbox</div>
-              </div>
-            </div>
-            <div>
-              <button class="button position-absolute Discover-button">
-                Discover Popular
-              </button>
-            </div>
-          </div>
-
-          <!-- gaming libary section -->
-
-          <div class="mt-5 p-4 bg-212224 position-relative img-border">
-            <h2 class=" mb-0 mb-sm-2 mb-md-4">
-              <span class="text-white text-decoration-underline"
-                >YourGaming</span
-              >
-              <span class="pink-text"> Library </span>
-            </h2>
-
-            <div class="d-grid gap-3">
-              <div class="d-flex justify-content-around">
-                <div class="d-flex gap-4">
-                  <div>
-                    <img class="img-border" src="/images/game-01.jpg" />
-                  </div>
-                  <div>
-                    <p class="text-white">Dota2</p>
-                    <p class="text-gray">Sandbox</p>
-                  </div>
-                </div>
-                <div>
-                  <p class="text-white">Date Added</p>
-                  <p class="text-gray">24/08/2036</p>
-                </div>
-                <div>
-                  <p class="text-white">Hours Played</p>
-                  <p class="text-gray">634 H 22 Mins</p>
-                </div>
-                <div>
-                  <p class="text-white">Currently</p>
-                  <p class="text-gray">Downloaded</p>
-                </div>
-                <button class="downloaded-button">Downloaded</button>
-              </div>
-              <div class="w-100 border-line"></div>
-              <div class="d-flex justify-content-around">
-                <div class="d-flex gap-4">
-                  <div>
-                    <img class="img-border" src="/images/game-02.jpg" />
-                  </div>
-                  <div>
-                    <p class="text-white">Fortnite</p>
-                    <p class="text-gray">Sandbox</p>
-                  </div>
-                </div>
-                <div>
-                  <p class="text-white">Date Added</p>
-                  <p class="text-gray">22/06/2036</p>
-                </div>
-                <div>
-                  <p class="text-white">Hours Played</p>
-                  <p class="text-gray">740 H 52 Mins</p>
-                </div>
-                <div>
-                  <p class="text-white">Currently</p>
-                  <p class="text-gray">Downloaded</p>
-                </div>
-                <button class="downloaded-button pink-text">Download</button>
-              </div>
-              <div class="border-line"></div>
-
-              <div class="d-flex justify-content-around">
-                <div class="d-flex gap-4">
-                  <div>
-                    <img class="img-border" src="/images/game-03.jpg" />
-                  </div>
-                  <div>
-                    <p class="text-white">CS-GO</p>
-                    <p class="text-gray">Sandbox</p>
-                  </div>
-                </div>
-                <div>
-                  <p class="text-white">Date Added</p>
-                  <p class="text-gray">21/04/2036</p>
-                </div>
-                <div>
-                  <p class="text-white">Hours Played</p>
-                  <p class="text-gray">892 H 14 Mins</p>
-                </div>
-                <div>
-                  <p class="text-white">Currently</p>
-                  <p class="text-gray">Downloaded</p>
-                </div>
-                <button class="downloaded-button">Downloaded</button>
-              </div>
-            </div>
-            <div class="mb-3 border-line"></div>
-
-            <div>
-              <button class="button position-absolute Discover-button">
-                View Your Library
-              </button>
-            </div>
-          </div>
+            <!-- end of the Desktop navigation -->
         </div>
-      </div>
-      <div class="text-white d-flex py-5 justify-content-center">
-        <div class="w-25 text-center">
-          Copyright @ 2036 Cyborg Company.All rights reserved. Design:TemplateMo
+    </nav>
+
+    <!-- end of the navbar -->
+
+    <!-- hero section -->
+
+    <!-- banner -->
+
+    <div class="container second-bg-color pt-5 pb-5">
+        <div class="row">
+            <div class="col-12">
+                <div class="container">
+                    <div class="banner text-white p-2 p-md-5">
+                        <div class="row">
+                            <div class="col-md-6 pt-5 pb-2">
+                                <p class="fs-20 ">Welcome To Cyborg</p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 pb-2">
+                                <h1 class="banner-text fw-bold">
+                                    <span class="pink-text"> BROWSE </span> OUR POPULAR GAMES HERE
+                                </h1>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 pb-5">
+                                <button
+                                    class="button mt-3 fs-14 px-4 py-2 rounded-pill button text-white border-0">Browse
+                                    Now</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- end of the banner -->
+
+                <!-- most populer section -->
+
+                <div class="container mt-5 ">
+                    <div class="bg-dark p-md-5 p-2 img-border">
+                        <h2 class="text-white mb-4 fw-bold">
+                            <span class="text-decoration-underline fs-34"> Most Popular</span>
+                            <span class="pink-text fs-34"> Right Now </span>
+                        </h2>
+                        <div class="row g-3">
+                            <div class="col-md-4 col-lg-3 col-sm-6 col-12">
+                                <div class="d-flex">
+
+                                    <div class=" card-body bg-28292b  p-3 img-border">
+
+
+                                        <img class="card-img-top img-border" src="/images/popular-01.jpg" />
+                                        <div class="d-flex justify-content-between align-items-center mt-3">
+                                            <div>
+                                                <div class="text-white fw-bold fs-15 fs-15 ">Fortnite</div>
+                                                <div class="text-gray fs-15">Sandbox</div>
+                                            </div>
+                                            <div>
+                                                <div class="d-flex align-items-center">
+                                                    <img class="star-img" src="/images/ph_star-fill.png">
+                                                    <span class="text-white fs-14">4.8</span>
+                                                </div>
+                                                <div class="d-flex align-items-center">
+                                                    <img class="star-img" src="/images/ph_download-fill.png">
+                                                    <span class="text-white fs-14">2.3M</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-lg-3 col-sm-6 col-12">
+                                <div class="d-flex">
+
+                                    <div class=" card-body p-3 img-border bg-28292b">
+
+                                        <img class="card-img-top img-border" src="/images/popular-02.jpg" />
+                                        <div class="d-flex justify-content-between align-items-center mt-3">
+                                            <div>
+                                                <div class="text-white fw-bold fs-15 ">Fortnite</div>
+                                                <div class="text-gray fs-15">Sandbox</div>
+                                            </div>
+                                            <div>
+                                                <div class="d-flex align-items-center">
+                                                    <img class="star-img" src="/images/ph_star-fill.png">
+                                                    <span class="text-white fs-14">4.8</span>
+                                                </div>
+                                                <div class="d-flex align-items-center">
+                                                    <img class="star-img" src="/images/ph_download-fill.png">
+                                                    <span class="text-white fs-14">2.3M</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-lg-3 col-sm-6 col-12">
+                                <div class="d-flex">
+
+                                    <div class=" card-body p-3 img-border bg-28292b">
+
+                                        <img class="card-img-top img-border" src="/images/popular-03.jpg" />
+                                        <div class="d-flex justify-content-between align-items-center mt-3">
+                                            <div>
+                                                <div class="text-white fw-bold fs-15 ">Fortnite</div>
+                                                <div class="text-gray fs-15">Sandbox</div>
+                                            </div>
+                                            <div>
+                                                <div class="d-flex align-items-center">
+                                                    <img class="star-img" src="/images/ph_star-fill.png">
+                                                    <span class="text-white fs-14">4.8</span>
+                                                </div>
+                                                <div class="d-flex align-items-center">
+                                                    <img class="star-img" src="/images/ph_download-fill.png">
+                                                    <span class="text-white fs-14">2.3M</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-lg-3 col-sm-6 col-12">
+                                <div class="d-flex">
+
+                                    <div class=" card-body p-3 img-border bg-28292b">
+
+                                        <img class="card-img-top img-border" src="/images/popular-04.jpg" />
+                                        <div class="d-flex justify-content-between align-items-center mt-3">
+                                            <div>
+                                                <div class="text-white fw-bold fs-15 ">Fortnite</div>
+                                                <div class="text-gray fs-15">Sandbox</div>
+                                            </div>
+                                            <div>
+                                                <div class="d-flex align-items-center">
+                                                    <img class="star-img" src="/images/ph_star-fill.png">
+                                                    <span class="text-white fs-14">4.8</span>
+                                                </div>
+                                                <div class="d-flex align-items-center">
+                                                    <img class="star-img" src="/images/ph_download-fill.png">
+                                                    <span class="text-white fs-14">2.3M</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-lg-3 col-sm-6 col-12">
+                                <div class="d-flex">
+
+                                    <div class=" card-body p-3 img-border  bg-28292b">
+
+                                        <img class="card-img-top img-border" src="/images/popular-05.jpg" />
+                                        <div class="d-flex justify-content-between align-items-center mt-3">
+                                            <div>
+                                                <div class="text-white fw-bold fs-15 ">Fortnite</div>
+                                                <div class="text-gray fs-15">Sandbox</div>
+                                            </div>
+                                            <div>
+                                                <div class="d-flex align-items-center">
+                                                    <img class="star-img" src="/images/ph_star-fill.png">
+                                                    <span class="text-white fs-14">4.8</span>
+                                                </div>
+                                                <div class="d-flex align-items-center">
+                                                    <img class="star-img" src="/images/ph_download-fill.png">
+                                                    <span class="text-white fs-14">2.3M</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-lg-3 col-sm-6 col-12">
+                                <div class="d-flex">
+
+                                    <div class=" card-body p-3 img-border bg-28292b">
+
+                                        <img class="card-img-top img-border" src="/images/popular-06.jpg" />
+                                        <div class="d-flex justify-content-between align-items-center mt-3">
+                                            <div>
+                                                <div class="text-white fw-bold  fs-15">Fortnite</div>
+                                                <div class="text-gray fs-15">Sandbox</div>
+                                            </div>
+                                            <div>
+                                                <div class="d-flex align-items-center">
+                                                    <img class="star-img" src="/images/ph_star-fill.png">
+                                                    <span class="text-white fs-14">4.8</span>
+                                                </div>
+                                                <div class="d-flex align-items-center">
+                                                    <img class="star-img" src="/images/ph_download-fill.png">
+                                                    <span class="text-white fs-14">2.3M</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-lg-3 col-sm-6 col-12">
+                                <div class="d-flex">
+
+                                    <div class=" card-body p-3 img-border bg-28292b">
+
+                                        <img class="card-img-top img-border" src="/images/popular-07.jpg" />
+                                        <div class="d-flex justify-content-between align-items-center mt-3">
+                                            <div>
+                                                <div class="text-white fw-bold fs-15 ">Fortnite</div>
+                                                <div class="text-gray fs-15">Sandbox</div>
+                                            </div>
+                                            <div>
+                                                <div class="d-flex align-items-center">
+                                                    <img class="star-img" src="/images/ph_star-fill.png">
+                                                    <span class="text-white fs-14">4.8</span>
+                                                </div>
+                                                <div class="d-flex align-items-center">
+                                                    <img class="star-img" src="/images/ph_download-fill.png">
+                                                    <span class="text-white fs-14">2.3M</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-lg-3 col-sm-6 col-12">
+                                <div class="d-flex">
+
+                                    <div class=" card-body p-3 img-border bg-28292b">
+
+                                        <img class="card-img-top img-border" src="/images/popular-08.jpg" />
+                                        <div class="d-flex justify-content-between align-items-center mt-3">
+                                            <div>
+                                                <div class="text-white fw-bold fs-15 ">Fortnite</div>
+                                                <div class="text-gray fs-15">Sandbox</div>
+                                            </div>
+                                            <div>
+                                                <div class="d-flex align-items-center">
+                                                    <img class="star-img" src="/images/ph_star-fill.png">
+                                                    <span class="text-white fs-14">4.8</span>
+                                                </div>
+                                                <div class="d-flex align-items-center">
+                                                    <img class="star-img" src="/images/ph_download-fill.png">
+                                                    <span class="text-white fs-14">2.3M</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="position-absolute">
+                    <button class="button  Discover-button fs-14 p-2 px-4 border-0 rounded-pill">
+                        Discover Popular
+                    </button>
+                </div>
+            </div>
+
+            <!-- end of the most populer section -->
+
+            <!-- gaming libary section -->
+
+
+            <div class="col-12">
+                <div class="container mt-5 ">
+                    <div class="bg-dark p-md-5 p-2 img-border">
+                        <h2 class="text-white mb-4 fw-bold">
+                            <span class="text-decoration-underline fs-34"> Most Popular</span>
+                            <span class="pink-text fs-34"> Right Now </span>
+                        </h2>
+                        <div class="row">
+                            <div class="col-2">
+                                <div class="row">
+                                    <div class="col-6">
+
+                                    </div>
+                                    <div class="col-6">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-7">
+                                <div class="col-4">
+
+                                </div>
+                                <div class="col-">
+
+                                </div>
+                                <div></div>
+
+                            </div>
+                            <div class="col-3">
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            </div>
+
         </div>
-      </div>
-    </div>
-    <script
-      src="https:/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+
+
+        <div class="text-white d-flex py-5 justify-content-center fs-15">
+            <div class="w-25 text-center">
+                Copyright @ 2036 Cyborg Company.All rights reserved. Design:TemplateMo
+            </div>
+        </div>
+
+
+
+
+
+        <script src="https:/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+
+</body>
+
 </html>
