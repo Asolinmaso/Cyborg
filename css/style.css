@@ -18,7 +18,7 @@ input::placeholder {
   background-color: #28292b;
   border-radius: 25px;
 }
-.navbar-toggler-icon{
+.navbar-toggler-icon {
   filter: invert(1);
 }
 .button {
@@ -26,7 +26,7 @@ input::placeholder {
 }
 .Discover-button {
   background-color: #df5d8b;
-  bottom: -20px; 
+  bottom: -20px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -47,8 +47,20 @@ input::placeholder {
   height: 15px;
   width: 15px !important;
 }
+.border-pink {
+  border: 1px solid #df5d8b !important;
+}
+.border-pink:active {
+  color: #000;
+  background-color: #df5d8b;
+  border-color: #df5d8b;
+}
 
-
+.border-pink:hover {
+  color: #000;
+  background-color: #df5d8b;
+  border-color: #df5d8b;
+}
 .featuredGames {
   background-color: #212224;
   border-radius: 25px;
@@ -90,15 +102,6 @@ input::placeholder {
 .download-arrow {
   background-color: #38393a;
 }
-/* .section-bg-color {
-  background-color: #030303;
-} */
-/* .arrow-position {
-  align-items: end;
-  justify-content: end;
-  display: flex;
-  padding-bottom: 1rem;
-} */
 
 .search-border {
   border-radius: 15px !important;
@@ -110,56 +113,75 @@ input::placeholder {
 .fs-15 {
   font-size: 15px;
 }
-/* .fs-20 {
-  font-size: 20px;
-} */
-/* .fs-34 {
-  font-size: 34px;
-} */
+
 .border-line {
   border-bottom: 1px solid rgb(44, 43, 43);
 }
-.nav-link{
+.nav-link {
   color: white !important;
 }
-.borde{
+.borde {
   border: 1px solid rgb(77, 74, 74);
 }
+.play-button {
+  height: 45px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
 
-
-@media only screen and (max-width:280px){
-  .Discover-button{
+@media only screen and (max-width: 280px) {
+  .Discover-button {
     font-size: 10px;
   }
-  .download-transparent{
+  .download-transparent {
     padding: 0.25rem 0.55rem !important;
   }
 }
 
-
-
-@media only screen and (min-width:280.99px) and (max-width:430px) {
-  .second-bg-color{
+@media only screen and (min-width: 280.99px) and (max-width: 430px) {
+  .second-bg-color {
     max-width: 90% !important;
   }
-  .Discover-button{
+  .Discover-button {
     font-size: 10px !important;
   }
- 
-  
+  .owl-nav {
+    position: absolute;
+    display: block !important;
+    color: wheat;
+    top: -81px;
+    right: -1rem;
+    font-size: 2rem !important;
+  }
 }
 
-@media screen and(max-width:820px) {
+@media only screen and (min-width: 430.99px) and (max-width: 820px) {
   .nav-link {
     color: #030303 !important;
   }
-  .copy-right{
+  .owl-nav {
+    position: absolute;
+    display: block !important;
+    color: wheat;
+    top: -81px;
+    right: -1rem;
+    font-size: 2rem !important;
+  }
+  .copy-right {
     width: 100%;
   }
-  .bottom-text{
-    font-size: 12px !important;
+  .bottom-text {
+    font-size: 14px !important;
   }
 }
-.card-footer{
+
+@media only screen and (min-width: 820.99px) and (max-width: 1024px) {
+  .bottom-text {
+    font-size: 15px !important;
+  }
+}
+
+.card-footer {
   border: none !important;
 }
